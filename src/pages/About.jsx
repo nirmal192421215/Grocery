@@ -58,7 +58,7 @@ const About = () => {
 
       {/* ─── MISSION ──────────────────────────────────────────────── */}
       <section className="section" style={{ backgroundColor: 'white' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
+        <div className="container grid-2" style={{ alignItems: 'center' }}>
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <div style={{ display: 'inline-block', backgroundColor: '#dcfce7', color: 'var(--color-primary)', padding: '0.3rem 0.9rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Our Mission</div>
             <h2 style={{ fontSize: '2.25rem', fontWeight: 800, lineHeight: 1.25, marginBottom: '1.25rem' }}>
@@ -143,7 +143,7 @@ const About = () => {
             <h2 style={{ fontSize: '2.25rem', fontWeight: 800, margin: 0 }}>Our Core Values</h2>
           </motion.div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem' }}>
+          <div className="grid-3">
             {[
               { icon: <Award size={28} />, title: 'Excellence', desc: 'We source only the finest quality products directly from trusted farms and certified brands.', color: '#dcfce7', tc: '#166534', hc: 'var(--color-primary)' },
               { icon: <Users size={28} />, title: 'Partnership', desc: 'We grow together with our B2B clients by offering the best margins and dedicated account managers.', color: '#dbeafe', tc: '#1e40af', hc: '#2563eb' },
@@ -173,7 +173,7 @@ const About = () => {
             <div style={{ display: 'inline-block', backgroundColor: '#dcfce7', color: 'var(--color-primary)', padding: '0.3rem 0.9rem', borderRadius: '20px', fontSize: '0.8rem', fontWeight: '600', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Our People</div>
             <h2 style={{ fontSize: '2.25rem', fontWeight: 800, margin: 0 }}>The Team Behind DND</h2>
           </motion.div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+          <div className="grid-3">
             {[
               { name: 'Dinesh Kumar', role: 'Founder & CEO', img: 'https://i.pravatar.cc/150?img=33', desc: 'Visionary behind DND with 15+ years in wholesale trade across Tamil Nadu.' },
               { name: 'Nandhini Raj', role: 'Head of Operations', img: 'https://i.pravatar.cc/150?img=47', desc: 'Ensures seamless logistics and warehouse management across all 3 hubs.' },

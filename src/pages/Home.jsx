@@ -55,7 +55,7 @@ const Home = () => {
         paddingTop: '8rem',
         paddingBottom: '8rem'
       }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container grid-2" style={{ alignItems: 'center' }}>
           <div className="hero-content">
             <motion.h1 
               className="heading-hero"
@@ -332,7 +332,7 @@ const Home = () => {
 
       {/* Mobile App Promotion */}
       <section className="section" style={{ backgroundColor: 'var(--color-bg)' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container grid-2" style={{ alignItems: 'center' }}>
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', lineHeight: 1.2 }}>Manage Wholesale Orders on the Go!</h2>
             <p className="text-sub" style={{ marginBottom: '2rem' }}>Download the DND Wholesale App to track deliveries, manage multiple store addresses, and approve purchase orders directly from your phone.</p>

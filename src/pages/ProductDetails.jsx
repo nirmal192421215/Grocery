@@ -57,7 +57,7 @@ const ProductDetails = () => {
         <span style={{ color: 'var(--color-text)', fontWeight: '600' }}>{product.name}</span>
       </div>
 
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginBottom: '4rem' }}>
+      <div className="container grid-2" style={{ marginBottom: '4rem' }}>
         {/* Gallery */}
         <div className="product-gallery">
           <div className="card" style={{ padding: '1rem', marginBottom: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px' }}>

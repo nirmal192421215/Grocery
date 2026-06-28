@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container section" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+      <div className="container section grid-2" style={{ alignItems: 'start' }}>
         
         {/* Contact Info & Map */}
         <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
