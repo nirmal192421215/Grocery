@@ -1,0 +1,147 @@
+.product-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  min-width: 0; /* Critical for CSS Grid + Images intrinsic sizing */
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-premium);
+  border-color: rgba(27, 94, 32, 0.3);
+}
+
+.product-image-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 160px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1);
+}
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.product-actions-overlay {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  transition: bottom 0.3s ease;
+  z-index: 10;
+}
+
+.product-card:hover .product-actions-overlay {
+  bottom: 0;
+}
+
+.icon-btn-overlay {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateY(0);
+}
+
+.icon-btn-overlay:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(27, 94, 32, 0.3);
+}
+
+.product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.product-unit {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.product-pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--color-border);
+  margin-top: auto;
+}
+
+.wholesale-price, .retail-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wholesale-price .price-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.retail-price .price-amount {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.w-100 {
+  width: 100%;
+}
