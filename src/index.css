@@ -31,12 +31,23 @@
   padding: 0;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
