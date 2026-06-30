@@ -266,7 +266,7 @@ const Home = () => {
       {/* Statistics Section */}
       <section className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '4rem 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem', textAlign: 'center' }}>
+          <div className="grid-4" style={{ textAlign: 'center' }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
               <Users size={48} style={{ marginBottom: '1rem', opacity: 0.8 }} />
               <h3 style={{ fontSize: '2.5rem', margin: 0, color: 'white' }}>10k+</h3>
