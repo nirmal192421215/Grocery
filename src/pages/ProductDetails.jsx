@@ -50,7 +50,7 @@ const ProductDetails = () => {
   return (
     <div className="product-page">
       {/* Breadcrumbs */}
-      <div className="container" style={{ padding: '2rem', display: 'flex', gap: '0.5rem', alignItems: 'center', fontSize: '0.875rem', color: 'var(--color-text-light)' }}>
+      <div className="container" style={{ padding: '1rem 1.25rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center', fontSize: '0.875rem', color: 'var(--color-text-light)' }}>
         <Link to="/">Home</Link> <ChevronRight size={14} /> 
         <Link to="/shop">Shop</Link> <ChevronRight size={14} /> 
         <span>{product.category}</span> <ChevronRight size={14} /> 
@@ -60,7 +60,7 @@ const ProductDetails = () => {
       <div className="container grid-2" style={{ marginBottom: '4rem' }}>
         {/* Gallery */}
         <div className="product-gallery">
-          <div className="card" style={{ padding: '1rem', marginBottom: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px' }}>
+          <div className="card product-gallery-card" style={{ padding: '1rem', marginBottom: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px' }}>
             <img 
               src={product.images[activeImage]} 
               alt={product.name} 
@@ -91,13 +91,13 @@ const ProductDetails = () => {
 
         {/* Details */}
         <div className="product-details-content">
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{product.name}</h1>
+          <h1 className="product-title" style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{product.name}</h1>
           <p className="text-sub" style={{ marginBottom: '1rem' }}>SKU: {product.sku} | Unit: {product.unit}</p>
           
           <div style={{ display: 'flex', alignItems: 'flex-end', gap: '1rem', marginBottom: '1.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid var(--color-border)' }}>
             <span style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--color-primary)' }}>₹{product.wholesalePrice}</span>
             <span style={{ fontSize: '1.25rem', color: 'var(--color-text-light)', textDecoration: 'line-through', marginBottom: '0.3rem' }}>₹{product.retailPrice}</span>
-            {product.discount && (
+            {product.discount > 0 && (
               <span className="badge badge-discount" style={{ marginBottom: '0.5rem' }}>Save {product.discount}%</span>
             )}
           </div>

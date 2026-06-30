@@ -342,3 +342,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+
+/* Product Details Responsive overrides */
+@media (max-width: 768px) {
+  .product-gallery-card {
+    height: 300px !important;
+  }
+  
+  .product-title {
+    font-size: 1.75rem !important;
+  }
+}
