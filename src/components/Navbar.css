@@ -12,6 +12,7 @@
 .navbar-scrolled {
   height: 70px;
   box-shadow: var(--shadow-soft);
+  background-color: rgba(255, 255, 255, 0.98) !important;
 }
 
 .navbar-container {

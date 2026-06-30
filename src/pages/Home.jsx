@@ -347,7 +347,7 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: '300px', height: '600px', backgroundColor: '#111827', borderRadius: '40px', border: '12px solid #1f2937', position: 'relative', overflow: 'hidden', boxShadow: '20px 20px 60px rgba(0,0,0,0.1)' }}>
+            <div className="phone-mockup" style={{ backgroundColor: '#111827', borderRadius: '40px', border: '12px solid #1f2937', position: 'relative', overflow: 'hidden', boxShadow: '20px 20px 60px rgba(0,0,0,0.1)' }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '120px', height: '25px', backgroundColor: '#1f2937', borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px', zIndex: 10 }}></div>
               <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=600" alt="App Preview" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.6 }} />
               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', width: '100%' }}>
@@ -375,7 +375,7 @@ const Home = () => {
             <p style={{ color: '#a7f3d0', marginBottom: '2rem', maxWidth: '600px' }}>
               Subscribe to our newsletter to receive the latest market rates, special bulk discounts, and new product arrivals directly in your inbox.
             </p>
-            <div style={{ display: 'flex', gap: '0.5rem', width: '100%', maxWidth: '500px' }}>
+            <div className="newsletter-form-container">
               <input 
                 type="email" 
                 placeholder="Enter your email address" 
@@ -385,10 +385,11 @@ const Home = () => {
                   borderRadius: 'var(--radius-sm)', 
                   border: 'none',
                   outline: 'none',
-                  fontSize: '1rem'
+                  fontSize: '1rem',
+                  width: '100%'
                 }} 
               />
-              <button className="btn btn-accent">Subscribe</button>
+              <button className="btn btn-accent" style={{ whiteSpace: 'nowrap' }}>Subscribe</button>
             </div>
           </div>
         </div>

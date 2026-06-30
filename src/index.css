@@ -311,3 +311,34 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1.25rem !important;
   }
 }
+
+/* Phone Mockup & Newsletter responsiveness */
+.phone-mockup {
+  width: 300px;
+  height: 600px;
+  transition: var(--transition);
+}
+
+.newsletter-form-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .phone-mockup {
+    width: 240px;
+    height: 480px;
+  }
+  
+  .newsletter-form-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  
+  .newsletter-form-container button {
+    width: 100%;
+  }
+}
