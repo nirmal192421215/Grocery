@@ -107,7 +107,7 @@ const ProductDetails = () => {
           {/* Bulk Pricing Table */}
           <div className="card" style={{ marginBottom: '2rem', background: '#F8FAF8' }}>
             <h3 style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>Bulk Wholesale Pricing</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', textAlign: 'center' }}>
+            <div className="bulk-pricing-grid">
               {product.bulkPricing.map((tier, idx) => (
                 <div key={idx} style={{ background: 'white', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-border)' }}>
                   <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>{tier.qty}</div>

@@ -353,3 +353,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.75rem !important;
   }
 }
+
+.bulk-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .bulk-pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+}
