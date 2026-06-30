@@ -161,7 +161,7 @@ const ProductDetails = () => {
       <div className="container" style={{ marginBottom: '4rem' }}>
         <div className="card">
           <h2 style={{ marginBottom: '1.5rem' }}>Product Specifications</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="specs-grid">
             {Object.entries(product.specs).map(([key, val], idx) => (
               <div key={idx} style={{ display: 'flex', borderBottom: '1px solid var(--color-border)', paddingBottom: '0.5rem' }}>
                 <span style={{ width: '150px', color: 'var(--color-text-light)' }}>{key}</span>
