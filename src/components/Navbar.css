@@ -135,5 +135,22 @@
   .mobile-menu-btn {
     display: flex;
   }
+
+  .navbar-container {
+    padding: 0 1rem !important;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .navbar-actions {
+    gap: 0.5rem;
+  }
+
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+  }
 }
 .autocomplete-item:hover { background-color: var(--color-bg); }
