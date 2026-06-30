@@ -54,3 +54,29 @@
 .category-card:hover .category-arrow {
   transform: translateX(5px);
 }
+
+@media (max-width: 768px) {
+  .category-card {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .category-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  
+  .category-emoji {
+    font-size: 2.2rem !important;
+  }
+  
+  .category-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category-action {
+    font-size: 0.8rem;
+    gap: 0.25rem;
+  }
+}
