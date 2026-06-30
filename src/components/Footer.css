@@ -120,7 +120,8 @@
 
 @media (max-width: 576px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
   }
   
   .footer-bottom {
